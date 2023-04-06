@@ -6,7 +6,8 @@
     "start": "node index.js",
     "dev": "nodemon index.js",
     "test": "nyc ava && npm run deps && standard",
-    "deps": "depcheck ."
+    "deps": "depcheck .",
+    "fix": "npx standard --fix"
   },
   "keywords": [],
   "author": "",
@@ -21,6 +22,7 @@
     "standard": "^14.3.4"
   },
   "dependencies": {
+    "body-parser": "^1.20.2",
     "corsify": "^2.1.0",
     "cuid": "^2.1.8",
     "dotenv": "^8.2.0",
